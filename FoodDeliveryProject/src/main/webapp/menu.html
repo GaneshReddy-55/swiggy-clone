@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #eff7f6;
+            background-image: url("https://images.creativemarket.com/0.1.0/ps/2367212/1920/1241/m1/fpnw/wm1/azfoodbloggerbg1-cover1920w-.jpg?1488756219&s=c2c4a849eff3550779b97242c475ef02");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: lightslategrey;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #b2f7ef;
+            border-radius: 5px;
+            background-color: #eff7f6;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus {
+            border-color: #15be64;
+            outline: none;
+            box-shadow: 0 0 8px rgba(242, 181, 212, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            background-color: #7bdff2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b2f7ef;
+        }
+
+    </style>
+<body>
+		<form action="menudata">
+        <fieldset>
+            <label for="menuid">Menu ID</label>
+            <input type="number" id="menuid" name="menuid" required>
+
+            <label for="restaurantid">Restaurant ID</label>
+            <input type="number" id="restaurantid" name="RestaurantId" required>
+
+            <label for="itemname">Item Name</label>
+            <input type="text" id="itemname" name="ItemName" required>
+
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description">
+
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="available">Availability</label>
+            <input type="text" id="avaliable" name="available" required>
+
+            <label for="img">Image URL</label>
+            <input type="text" id="img" name="img">
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+		
+</body>
+</html>

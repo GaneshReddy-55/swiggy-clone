@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/bowl-baked-beans-garlic-pepper-trivet-blue-table_114579-90057.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #4D5DC4;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #91AECF;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #1D1C1C;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #16599C;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #441C78;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3375A1;
+}
+
+</style>
+</head>
+<body>
+ <div class="form-container">
+        <form action="addrestaurant">
+            <fieldset>
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id" required><br>
+
+                <label for="rest_name">Name:</label>
+                <input type="text" id="rest_name" name="rest_name" required><br>
+
+                <label for="curisive_Type">Cusivine Type:</label>
+                <input type="text" id="curisive_Type" name="cusivine_Type" required><br>
+
+                <label for="time">Delivery Time:</label>
+                <input type="number" id="time" name="time" required><br>
+
+                <label for="Avaliable">Avaliability:</label>
+                <input type="text" id="Avaliable" name="avaliable" required><br>
+
+                <label for="rate">Rating:</label>
+                <input type="number" id="rate" name="rate" min="1" max="5" required><br>
+
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+</html>
